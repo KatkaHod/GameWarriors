@@ -4,8 +4,13 @@ public class Fight {
 
     public static void main(String[] args) {
 
-        Cube cube = new Cube(); //New instance of Cube class, call the constructor
-        System.out.println(Cube.ReturnCountOfWalls());
+        Cube sixWalls = new Cube(); //no parameter
+        System.out.println(sixWalls.ReturnCountOfWalls());
+
+
+        //call the first and second constructor
+        Cube tenWalls = new Cube(10); //call the constructor with parameters
+        System.out.println(tenWalls.ReturnCountOfWalls());
 
 
 

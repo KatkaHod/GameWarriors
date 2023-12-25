@@ -1,7 +1,6 @@
 package TurnBasedFight;
-
-import java.util.Random;
 import java.util.Scanner;
+import java.util.Random;
 
 /**
  * the class represents the playing cube
@@ -20,15 +19,24 @@ public class Cube {
    private static int CountOfWalls; //New variable represents Count of walls in cube, cannot be modified externally
    private Random random; //New variable represents random number generator
 
-    //Creating a new instance of cube
-   public Cube() {
-       CountOfWalls = 6; //Setting up the six walls
+    //First method-constructor
+    public Cube() {
+        CountOfWalls = 6;
+        random = new Random();
+    }
+
+    //Second method-constructor
+    //When I do second a method with SAME variable I use "this." variable
+    //Reference to the instance when setting the attribute (this.)
+   public Cube(int CountOfWalls) {
+       this.CountOfWalls = CountOfWalls; //Setting up the walls
        random = new Random(); //instance of Random class
    }
 
-   //Return count of walls, READ-ONLY, User can see only the value inside, can not change!
+     //Return count of walls, READ-ONLY, User can see only the value inside, can not change!
     public static int ReturnCountOfWalls() {
         return CountOfWalls;
     }
+
 
 } //End of the public class Cube
