@@ -19,23 +19,41 @@ public class Cube {
    private static int CountOfWalls; //New variable represents Count of walls in cube, cannot be modified externally
    private Random random; //New variable represents random number generator
 
-    //First method-constructor
+    /**
+     * First constructor of Cube, no parameter
+     */
     public Cube() {
         CountOfWalls = 6;
         random = new Random();
     }
 
-    //Second method-constructor
-    //When I do second a method with SAME variable I use "this." variable
-    //Reference to the instance when setting the attribute (this.)
+    /**
+     * Second Constructor of Cube with parameter
+     * Using "this" to refer to the instance variable
+     * @param CountOfWalls
+     */
    public Cube(int CountOfWalls) {
        this.CountOfWalls = CountOfWalls; //Setting up the walls
        random = new Random(); //instance of Random class
    }
 
-     //Return count of walls, READ-ONLY, User can see only the value inside, can not change!
+    /** READ-ONLY
+     * User can see just the value (number) inside
+     * @return number of Walls (There are 6 walls)
+     */
     public static int ReturnCountOfWalls() {
         return CountOfWalls;
+    }
+
+
+    /**
+     * Throw the cube
+     * nextInt(till count of walls variable)
+     * @return random number between 1-6
+     */
+
+    public int throwcube() {
+        return random.nextInt(CountOfWalls) + 1;
     }
 
 
