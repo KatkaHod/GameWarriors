@@ -56,5 +56,13 @@ public class Cube {
         return random.nextInt(CountOfWalls) + 1;
     }
 
+    /**
+     * Returns the text representation of the cube
+     *
+     */
+    @Override
+    public String toString() {
+        return String.format("Cube with %s walls", CountOfWalls);
+    }
 
 } //End of the public class Cube
