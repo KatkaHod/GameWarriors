@@ -20,15 +20,15 @@ public class Cube {
    private Random random; //New variable represents random number generator
 
     /**
-     * First constructor of Cube, no parameter
+     * Instance of Cube, no parameter
      */
     public Cube() {
-        CountOfWalls = 6;
+        this.CountOfWalls = 6;
         random = new Random();
     }
 
     /**
-     * Second Constructor of Cube with parameter
+     * Instance of playing Cube with parameter
      * Using "this" to refer to the instance variable
      * @param CountOfWalls
      */
@@ -57,8 +57,9 @@ public class Cube {
     }
 
     /**
-     * Returns the text representation of the cube
-     *
+     * Returns the String representation of the object
+     * Override annotation the compiler checks to ensure that I am truly overriding a method.
+     * Helps to avoid accidental mistakes
      */
     @Override
     public String toString() {
