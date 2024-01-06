@@ -1,6 +1,6 @@
 package TurnBasedFight;
 
-public class Fight {
+public class FightApp {
 
     public static void main(String[] args) {
 
