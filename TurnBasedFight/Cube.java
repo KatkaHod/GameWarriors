@@ -19,6 +19,7 @@ import java.util.Random;
 
 public class Cube {
 
+    //Class Cube has two private attributes
    private static int CountOfWalls; //New variable represents Count of walls in cube, cannot be modified externally
    private Random random; //New variable represents random number generator
 
