@@ -7,11 +7,14 @@ import java.util.Random;
  * The class has two attributes, private modifier - visible in class only
  * Always set private modifier, except when I need public (some cases)
  * Constructor- the method that is called when the object instance is created.
+ * Constructors allow to initialise an object and set its properties at the time of creation.
  * *
  * Adding constructor to class - public Cube
  *      * No return type!
  *      * Declare same way as method
  *      * Name must be same as a name of Class!
+ *      Important info - If no constructor is created in the class
+ *                 a default constructor is created by default.
  */
 
 public class Cube {
@@ -21,6 +24,7 @@ public class Cube {
 
     /**
      * Instance of Cube, no parameter
+     * Object initialization
      */
     public Cube() {
         this.CountOfWalls = 6;
@@ -28,7 +32,8 @@ public class Cube {
     }
 
     /**
-     * Instance of playing Cube with parameter
+     * Constructor with parameter
+     * Object initialization based on  parameter
      * Using "this" to refer to the instance variable
      * @param CountOfWalls
      */
