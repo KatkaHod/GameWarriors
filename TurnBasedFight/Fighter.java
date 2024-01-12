@@ -93,6 +93,26 @@ public class Fighter {
     }
 
 
+    public void defence(int strike) {
+        int injury = strike - (defence + cube.throwcube());
+        if ( injury > 0) {
+            life -= injury;
+
+            if (life >= 0) {
+                life = 0;
+            }
+        }
 
     }
+
+
+    public void attack() {
+
+
+
+    }
+
+
+}
+
 
