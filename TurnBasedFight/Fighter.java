@@ -42,7 +42,7 @@ public class Fighter {
      * constructor for attributes name,life,attack,defence and cube
      */
 
-    public Fighter(String name, int life, int maxLife, int attack, int defence, Cube cube) {
+    public Fighter(String name, int life, int maxLife, int attack, Cube cube) {
     this.name = name;
     this.life = life;
     this.maxLife = maxLife;
@@ -70,7 +70,7 @@ public class Fighter {
 
     /**
      * Graphic representation of life
-     * @return
+     * Graphic representation of life
      */
 
     public String GraphicLife() {
@@ -79,7 +79,7 @@ public class Fighter {
 
         double countParts = Math.round(((double) life / maxLife) * total);
 
-        if ((countParts == 0)) && ((isAlive()) {
+        if ((countParts == 0) && (isAlive())) {
             countParts = 1;
         }
         for (int i = 0; i < countParts; i++) {
@@ -96,7 +96,3 @@ public class Fighter {
 
     }
 
-
-
-
-}
